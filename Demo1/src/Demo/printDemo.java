@@ -5,10 +5,18 @@ public class printDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("Hello world");
-		System.out.println("Hi");
-		System.out.println("Hello world");
-		System.out.println("Hi");
+		 String str = "madam";
+	        String rev = "";
+
+	        for (int i = str.length() - 1; i >= 0; i--) {
+	            rev = rev + str.charAt(i);
+	        }
+
+	        if (str.equals(rev)) {
+	            System.out.println("Palindrome");
+	        } else {
+	            System.out.println("Not a Palindrome");
+	        }
 	}
 
 }
